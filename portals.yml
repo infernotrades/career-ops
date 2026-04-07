@@ -1,0 +1,239 @@
+# Portal Scanner Configuration — Daniel King
+# Tailored for crypto/AI/tech + operations + business roles
+
+title_filter:
+  positive:
+    # -- AI / Automation --
+    - "AI"
+    - "Automation"
+    - "n8n"
+    - "Workflow"
+    - "Bot"
+    - "LLM"
+    - "Agentic"
+    - "Hyperautomation"
+    # -- Crypto / Blockchain --
+    - "Crypto"
+    - "Blockchain"
+    - "DeFi"
+    - "Web3"
+    - "Solana"
+    - "Bitcoin"
+    - "Exchange"
+    - "DAO"
+    # -- Operations / Executive --
+    - "Operations"
+    - "Operator"
+    - "Executive"
+    - "Founder"
+    - "COO"
+    - "Director"
+    - "VP"
+    - "Chief"
+    - "Manager"
+    - "Business"
+    - "Consulting"
+    # -- Marketing / Design --
+    - "Marketing"
+    - "Brand"
+    - "Growth"
+    - "Graphic"
+    - "Design"
+    # -- Sales / BD --
+    - "Sales"
+    - "Business Development"
+    - "Partnership"
+    - "Account"
+    # -- Project / Program --
+    - "Project Manager"
+    - "Program"
+    - "Coordinator"
+  negative:
+    - "Junior"
+    - "Intern"
+    - ".NET"
+    - "Java "
+    - "iOS"
+    - "Android"
+    - "PHP"
+    - "Ruby"
+    - "Embedded"
+    - "Firmware"
+    - "FPGA"
+    - "ASIC"
+    - "Mainframe"
+    - "COBOL"
+    - "SAP "
+    - "Oracle EBS"
+  seniority_boost:
+    - "Senior"
+    - "Staff"
+    - "Principal"
+    - "Lead"
+    - "Head"
+    - "Director"
+    - "VP"
+    - "Chief"
+    - "Executive"
+
+search_queries:
+  # -- Crypto / AI --
+  - name: Crypto — Operations
+    query: '"operations" OR "COO" OR "executive" crypto OR blockchain OR DeFi OR web3 remote'
+    enabled: true
+
+  - name: Crypto — AI/Automation
+    query: 'AI automation blockchain OR crypto OR web3 OR "smart contract" remote senior'
+    enabled: true
+
+  - name: Crypto — Business Development
+    query: '"business development" OR "partnership" OR "sales" crypto OR blockchain remote'
+    enabled: true
+
+  # -- AI / Automation --
+  - name: Ashby — AI Automation
+    query: 'site:jobs.ashbyhq.com automation OR "AI" OR "workflow" OR "n8n" remote'
+    enabled: true
+
+  - name: Greenhouse — AI Automation
+    query: 'site:job-boards.greenhouse.io automation OR "AI operations" OR "AI consultant" remote'
+    enabled: true
+
+  - name: Wellfound — Startup Roles
+    query: 'site:wellfound.com operations OR "founder" OR "AI" OR automation remote'
+    enabled: true
+
+  - name: Indeed — AI/Automation
+    query: 'site:indeed.com "AI automation" OR "workflow automation" OR "n8n" OR "bot developer" remote'
+    enabled: true
+
+  # -- Operations / Executive --
+  - name: Executive — Operations
+    query: '"operations manager" OR "COO" OR "director of operations" AI OR tech OR crypto remote'
+    enabled: true
+
+  - name: Executive — Consulting
+    query: '"business consultant" OR "AI consultant" OR "automation consultant" remote senior'
+    enabled: true
+
+  # -- Design / Marketing --
+  - name: Design — Brand/Graphic
+    query: '"graphic designer" OR "brand designer" OR "marketing designer" AI crypto remote'
+    enabled: true
+
+  - name: Marketing — Growth
+    query: '"growth manager" OR "marketing operations" OR "content" AI crypto remote senior'
+    enabled: true
+
+tracked_companies:
+  # -- Crypto Exchanges & Platforms --
+  - name: Coinbase
+    careers_url: https://www.coinbase.com/careers
+    scan_method: websearch
+    scan_query: 'site:coinbase.com/careers operations OR AI OR automation OR marketing OR design'
+    enabled: true
+
+  - name: Kraken
+    careers_url: https://jobs.ashbyhq.com/kraken
+    enabled: true
+
+  - name: Bitwise
+    careers_url: https://jobs.ashbyhq.com/bitwise
+    enabled: true
+
+  - name: Uniswap
+    careers_url: https://uniswap.org/careers
+    scan_method: websearch
+    scan_query: 'site:uniswap.org/careers OR "uniswap" jobs operations OR marketing OR design'
+    enabled: true
+
+  - name: Chainalysis
+    careers_url: https://www.chainalysis.com/careers
+    scan_method: websearch
+    scan_query: 'site:chainalysis.com/careers operations OR marketing OR design OR sales'
+    enabled: true
+
+  - name: OpenSea
+    careers_url: https://jobs.ashbyhq.com/opensea
+    enabled: true
+
+  - name: Phantom (Solana)
+    careers_url: https://jobs.ashbyhq.com/phantom
+    enabled: true
+
+  - name: Solana Foundation
+    careers_url: https://solana.org/careers
+    scan_method: websearch
+    scan_query: 'site:solana.org/careers OR "solana" jobs operations OR marketing OR design'
+    enabled: true
+
+  # -- AI / Automation --
+  - name: Anthropic
+    careers_url: https://job-boards.greenhouse.io/anthropic
+    api: https://boards-api.greenhouse.io/v1/boards/anthropic/jobs
+    enabled: true
+
+  - name: n8n
+    careers_url: https://jobs.ashbyhq.com/n8n
+    enabled: true
+
+  - name: Zapier
+    careers_url: https://jobs.ashbyhq.com/zapier
+    enabled: true
+
+  - name: Airtable
+    careers_url: https://job-boards.greenhouse.io/airtable
+    api: https://boards-api.greenhouse.io/v1/boards/airtable/jobs
+    enabled: true
+
+  - name: Retool
+    careers_url: https://jobs.ashbyhq.com/retool
+    enabled: true
+
+  # -- Crypto Infrastructure --
+  - name: Circle
+    careers_url: https://careers.circle.com
+    scan_method: websearch
+    scan_query: 'site:careers.circle.com operations OR marketing OR design OR sales OR business'
+    enabled: true
+
+  - name: Ripple
+    careers_url: https://ripple.com/careers
+    scan_method: websearch
+    scan_query: 'site:ripple.com/careers operations OR marketing OR design OR sales'
+    enabled: true
+
+  - name: Polygon Labs
+    careers_url: https://jobs.ashbyhq.com/polygon
+    enabled: true
+
+  - name: Chainlink
+    careers_url: https://jobs.ashbyhq.com/chainlink
+    enabled: true
+
+  - name: Alchemy
+    careers_url: https://www.alchemy.com/careers
+    scan_method: websearch
+    scan_query: 'site:alchemy.com/careers operations OR marketing OR design OR sales OR AI'
+    enabled: true
+
+  # -- Broader Tech / Startup --
+  - name: Notion
+    careers_url: https://www.notion.so/careers
+    scan_method: websearch
+    scan_query: 'site:notion.so/careers operations OR marketing OR design OR business OR founder'
+    enabled: true
+
+  - name: Figma
+    careers_url: https://jobs.ashbyhq.com/figma
+    enabled: true
+
+  - name: Loom
+    careers_url: https://jobs.ashbyhq.com/loom
+    enabled: true
+
+  - name: Linear
+    careers_url: https://linear.app/careers
+    scan_method: websearch
+    scan_query: 'site:linear.app/careers operations OR marketing OR design OR sales'
+    enabled: true

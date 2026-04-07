@@ -1,0 +1,73 @@
+# Career-Ops Profile — Daniel King
+# Single source of truth for all job search operations
+
+candidate:
+  full_name: "Daniel King"
+  email: "dking_1991@yahoo.com"
+  phone: "(253) 732-2784"
+  location: "Puyallup, WA 98375"
+  linkedin: "linkedin.com/in/dking0311"
+
+target_roles:
+  primary:
+    - "AI/Automation Consultant"
+    - "Operations Manager"
+    - "Founder / Executive"
+    - "Crypto Operations"
+    - "Business Development"
+  archetypes:
+    - name: "AI/Automation Consultant"
+      level: "Senior"
+      fit: "primary"
+    - name: "Operations Manager"
+      level: "Senior"
+      fit: "primary"
+    - name: "Founder / Executive"
+      level: "Senior"
+      fit: "primary"
+    - name: "Crypto/Blockchain Operations"
+      level: "Mid-Senior"
+      fit: "primary"
+    - name: "Business Development Manager"
+      level: "Mid-Senior"
+      fit: "secondary"
+    - name: "Project Manager"
+      level: "Senior"
+      fit: "secondary"
+    - name: "Graphic Designer / Brand Designer"
+      level: "Mid"
+      fit: "adjacent"
+
+narrative:
+  headline: "Founder who scaled a company from 2 to 135 employees and $5M/month revenue"
+  exit_story: "Co-founded and scaled SPP Personnel from 2 employees to 135 and $5M/month revenue in 3 years. Now fully immersed in crypto and AI, running an AI automation consultancy helping struggling businesses streamline operations."
+  superpowers:
+    - "Scaling operations from zero to enterprise scale"
+    - "Building AI automation workflows (n8n, OpenAI, Claude)"
+    - "Full HR cycle: hiring, firing, SOPs, compliance"
+    - "Investor relations and capital raising"
+    - "Customer acquisition and marketing"
+    - "Graphic design and brand building"
+  proof_points:
+    - name: "SPP Personnel"
+      hero_metric: "Grew from 2 to 135 employees, $0 to $5M/month revenue in 3 years"
+    - name: "KNGX Strategies"
+      url: "https://kngx.xyz"
+      hero_metric: "AI automation agency saving clients 20+ hrs/week"
+  # Optional: dashboard/demo URL with credentials
+  # dashboard:
+  #   url: "https://example.com/demo"
+  #   password: "demo-2026"
+
+compensation:
+  target_range: "$27+/hour (~$55K+/year)"
+  currency: "USD"
+  minimum: "$20/hour"
+  location_flexibility: "Remote ideal but not required. Puyallup, WA area preferred."
+
+location:
+  country: "United States"
+  city: "Puyallup, WA"
+  timezone: "PST"
+  visa_status: "No sponsorship needed"
+  onsite_availability: "Open to on-site in Pacific NW or anywhere for the right opportunity"
